@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "target": "es2018",                                   /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "esnext",                                   /* Specify what module code is generated. */
+    "noEmit": true,                                       /* Disable emitting files from a compilation. */
+    "forceConsistentCasingInFileNames": true,             /* Ensure that casing is correct in imports. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": [
+    "types.d.ts",
+    "src/**/*"
+  ]
+}
