@@ -12,7 +12,7 @@
 # Install
 
 ```sh
-npm install cholk
+npm install web-cholk
 ```
 
 # Usage
@@ -20,7 +20,7 @@ npm install cholk
 ### Import
 
 ```js
-import Cholk from 'cholk'
+import Cholk from 'web-cholk'
 ```
 
 ### Base usage
@@ -175,7 +175,7 @@ console.log(...suffixCholk('Cholk'))
 ### List all Styles
 
 ```js
-import Cholk from 'cholk'
+import Cholk from 'web-cholk'
 Cholk.styles()
 ```
 
@@ -411,7 +411,7 @@ console.log('%s%s', 'String Specifier is `%%s`, ', 'it formats the value as a st
 #### With baseStyle
 
 ```js
-import Cholk from 'cholk'
+import Cholk from 'web-cholk'
 
 Cholk.extend({
   baseStyle: 'padding: 4px 8px; border: 1px solid #888;',
@@ -437,7 +437,7 @@ console.log(...cholk)
 #### without baseStyle
 
 ```js
-import Cholk from 'cholk'
+import Cholk from 'web-cholk'
 
 Cholk.extend({
   baseStyle: '',
