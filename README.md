@@ -1,2 +1,1 @@
-# Cholk
-Web Console styling
+![Cholk](./assets/Social.png)
