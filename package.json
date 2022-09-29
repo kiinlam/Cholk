@@ -1,5 +1,5 @@
 {
-  "name": "cholk",
+  "name": "web-cholk",
   "version": "0.1.0",
   "description": "Web Console styling",
   "module": "es/cholk.js",
