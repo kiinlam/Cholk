@@ -9,6 +9,7 @@ import handleAffix from './utils/handleAffix'
 import handlePresetCall from './utils/handlePresetCall'
 import handleStyleValue from './utils/handleStyleValue'
 import resetStyle from './utils/resetStyle'
+import { CholkConfig, CholkInastace, CholkSetting } from '../types'
 
 const { STYLE, PRESET } = STYLES
 
@@ -28,7 +29,7 @@ customColors(STYLE, {
   grey: '#5e5e5e', // 灰黑
 })
 
-const proxyHandler: ProxyHandler<Cholk> = {
+const proxyHandler: ProxyHandler<CholkInastace> = {
   get: function (target, key, receiver) {
     if (key === 'css') {
       // redirect to function cholk.css()
@@ -80,9 +81,9 @@ const proxyHandler: ProxyHandler<Cholk> = {
  * }
  */
 function Cholk(setting: CholkSetting = {}) {
-  let proxyCholk: Cholk
+  let proxyCholk: CholkInastace
 
-  const cholk: Cholk = (...args) => {
+  const cholk: CholkInastace = (...args) => {
     applyParams(cholk, args)
     return proxyCholk
   }
@@ -126,7 +127,7 @@ function Cholk(setting: CholkSetting = {}) {
     cholk._params = []
   }
 
-  proxyCholk = new Proxy<Cholk>(cholk, proxyHandler)
+  proxyCholk = new Proxy<CholkInastace>(cholk, proxyHandler)
   return proxyCholk
 }
 

@@ -1,3 +1,4 @@
+import { CholkPresetCssValue } from "../../types"
 import isTypeof from "./isTypeof"
 import STYLES from './styles'
 

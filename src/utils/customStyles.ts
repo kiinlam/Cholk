@@ -1,3 +1,5 @@
+import { CholkStyleCollection, CholkStyleConfig } from "../../types"
+
 export default function customStyles(STYLE: CholkStyleCollection, styles: CholkStyleConfig) {
   for (let key in styles) {
     let value = `${styles[key]}`

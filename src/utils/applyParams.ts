@@ -1,7 +1,8 @@
+import { CholkAffix, CholkInastace } from '../../types'
 import appendStyle from './appendStyle'
 import STYLES from './styles'
 
-export default function applyParams(target: Cholk | CholkAffix, args: any[]) {
+export default function applyParams(target: CholkInastace | CholkAffix, args: any[]) {
   let template = ''
   let params = []
   for (let i of args) {

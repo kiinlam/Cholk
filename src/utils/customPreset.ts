@@ -1,3 +1,4 @@
+import { CholkPresetCollection } from '../../types'
 import isTypeof from './isTypeof'
 
 export default function customPreset(

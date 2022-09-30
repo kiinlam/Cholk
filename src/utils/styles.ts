@@ -1,3 +1,5 @@
+import { CholkCssValue, CholkPresetCollection, CholkStyleCollection } from "../../types"
+
 const STYLE: CholkStyleCollection = {
   bold: 'font-weight: bold;',
   italic: 'font-style: italic;',

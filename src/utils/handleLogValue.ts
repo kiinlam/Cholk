@@ -1,6 +1,7 @@
+import { CholkInastace, CholkPresetLogValue } from '../../types'
 import isTypeof from './isTypeof'
 
-export default function handleLogValue(target: Cholk, value: CholkPresetLogValue) {
+export default function handleLogValue(target: CholkInastace, value: CholkPresetLogValue) {
   target._presetLogger = function (...args) {
     if (typeof value === 'undefined') return []
 

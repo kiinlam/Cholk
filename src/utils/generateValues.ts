@@ -1,9 +1,11 @@
+import { CholkInastace } from "../../types"
+
 /**
  * generateValues
  * 生成模板字符串
  * @param {object} cholk
  */
-export default function generateValues(cholk: Cholk) {
+export default function generateValues(cholk: CholkInastace) {
   let tmpl = cholk._template
   let params = [...cholk._params]
   const { _template: preTmpl = '', _params: preParams = [] } = cholk._prefix

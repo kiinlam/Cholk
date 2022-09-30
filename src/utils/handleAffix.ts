@@ -1,3 +1,4 @@
+import { CholkPresetConfig } from '../../types'
 import appendStyle from './appendStyle'
 import applyParams from './applyParams'
 import handleStyleValue from './handleStyleValue'

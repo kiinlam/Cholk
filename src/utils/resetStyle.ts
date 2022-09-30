@@ -1,4 +1,6 @@
-export default function resetStyle(target: Cholk) {
+import { CholkInastace } from "../../types"
+
+export default function resetStyle(target: CholkInastace) {
   const template = target._template
   const params = target._params
   if (template.endsWith('%c')) {
